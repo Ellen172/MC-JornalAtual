@@ -9,7 +9,7 @@ body {
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-columns: 2.5fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
         "header header"
@@ -29,8 +29,8 @@ body {
 
 #header h1 {
     color: white;
-    text-shadow: 0.08em 0 0.2em rgba(0,0,0,0.7);
-    font-size: 4em;
+    text-shadow: 6px 3px 10px rgba(0,0,0,0.7);
+    font-size: 4rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bolder;
     justify-self: center;
@@ -40,7 +40,7 @@ body {
 
 #header span {
     color: #545454;
-    font-size: 0.8em;
+    font-size: 0.8rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     vertical-align: bottom;
     justify-self: end;
@@ -52,12 +52,13 @@ body {
     color: #545454;
     font-weight: bold;
     text-decoration: none;
-    font-size: 0.8em;
+    font-size: 0.8rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #sidenav {
     grid-area: sidenav;
+    margin-left: 20px;
 }
 
 #sidenav ul {
@@ -67,24 +68,50 @@ body {
 #sidenav li {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-decoration: none;
+    height: 120px;
 }
 
 #sidenav li > a {
-    text-decoration: none;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 
+        "menu-title ."
+        "menu-title menu-subtitle";
+    font-family: 'Rajdhani';
     color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
-.menu-white {
+#sidenav .title{
+    grid-area: menu-title;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-left: 20px;
+    display: flex;
+    align-self: center;
+}
+
+#sidenav .subtitle {
+    grid-area: menu-subtitle;
+    align-self: flex-end;
+    justify-self: end;
+    margin-right: 20px;
+    font-size: 1.4rem;
+}
+
+.white {
     background-color: white;
     color: #6422b8;
 }
 
-.menu-pink{
+.pink{
     background-color: #ff73cb;
     color: white;
 }
 
-.menu-purple{
+.purple{
     background-color: #6422b8;
     color: #ffd93b;
 }
@@ -102,7 +129,7 @@ body {
 
 #title h1 {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 .image-news{
