@@ -40,7 +40,8 @@ window.onload=function(){
             }
         ]
     };
-
+    
+    changeNewsByType("mundo");
 
     function changeMenuClass(atualClass){
         
