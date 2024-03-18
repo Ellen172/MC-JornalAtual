@@ -68,7 +68,7 @@ body {
     height: 120px;
 }
 
-#sidenav li > a {
+#sidenav li > button {
     display: grid;
     grid-template-rows: 3fr 1fr;
     grid-template-columns: 3fr 1fr;
@@ -76,9 +76,12 @@ body {
         "menu-title ."
         "menu-title menu-subtitle";
     font-family: 'Rajdhani';
+    background-color: inherit;
     color: inherit;
     text-decoration: none;
     text-transform: uppercase;
+    text-align: start;
+    cursor: pointer;
 }
 
 #sidenav .title{
@@ -179,7 +182,7 @@ body {
     text-align: justify;
 }
 
-#news-content p {
+#news-content p, h3, h4 {
     margin: 10px 0;
 }
 
