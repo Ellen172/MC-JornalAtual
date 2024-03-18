@@ -126,7 +126,7 @@ body {
     display: grid;
 }
 
-#img-theme-news{
+#icon-news {
     justify-self: center;
     align-self: center;
 }
